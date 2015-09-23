@@ -1,0 +1,68 @@
+header, section, footer, aside, nav, article { 
+	display:block; 
+}
+
+header {
+	background-color: pink;
+	height: 100px;
+}
+
+footer {
+	background-color: grey;
+	height: 200px;
+}
+
+nav {
+	background-color: #a3ff9b;
+}
+
+aside {
+	background-color: #b2b23e;
+}
+
+#content {
+	background-color: #d3ffce;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 800px;
+}
+
+.fill {
+	height: 300px;
+}
+
+/*   FLEXBOX (2016+) */
+
+.workarea {
+	display: flex;
+}
+#content {
+	width: 60%;
+}
+#catalog {
+	width: 20%;
+}
+#filter {
+	width: 20%;
+}
+
+
+/*   FLOAT (200X-2016)  */
+/*#content {
+	float: left;
+	width: 60%;
+}
+#catalog {
+	float: left;
+	width: 20%;
+}
+#filter {
+	float: left;
+	width: 20%;
+}
+.clear {
+	clear: both;
+}*/
+
