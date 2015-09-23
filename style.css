@@ -3,8 +3,8 @@ header, section, footer, aside, nav, article {
 }
 
 header {
-	background-color: pink;
-	height: 100px;
+	background-color: #ffff2c;
+	height: 80px;
 }
 
 footer {
@@ -13,7 +13,7 @@ footer {
 }
 
 nav {
-	background-color: #a3ff9b;
+	background-color: #ffe359;
 }
 
 aside {
@@ -29,11 +29,61 @@ aside {
 	width: 800px;
 }
 
+header {
+	display: flex;
+}
+
+.logo {
+	flex-grow: 2;
+}
+
+.name {
+	font-size: 18px;
+	flex-grow: 1;
+	padding-top: 30px;
+}
+
+.info {
+	padding-top: 10px;
+	flex-grow: 3;
+}
+
+.info span{
+	display: block;
+}
+
 .fill {
 	height: 300px;
 }
 
-/*   FLEXBOX (2016+) */
+nav ul {
+	padding-left: 20px;
+	list-style-type: none;
+	margin: 0;
+}
+
+nav ul > li {
+	display: inline-block;
+	height: 30px;
+}
+
+nav a {
+	font-size: 18px;
+	text-decoration: none;
+	color: #000;
+	display: block;
+	height: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+nav a:visited {
+	color: #000;
+}
+
+nav a.active {
+	background-color: red;
+}
 
 .workarea {
 	display: flex;
@@ -48,21 +98,4 @@ aside {
 	width: 20%;
 }
 
-
-/*   FLOAT (200X-2016)  */
-/*#content {
-	float: left;
-	width: 60%;
-}
-#catalog {
-	float: left;
-	width: 20%;
-}
-#filter {
-	float: left;
-	width: 20%;
-}
-.clear {
-	clear: both;
-}*/
 
