@@ -13,17 +13,20 @@
             <div class="name">Сайт чего-нибудь!</div>
             <div class="info">
                 <div class="info-block">
-                    <span class="info-address">Адрес: г. Москва, ул. Генерала Тюленева, д. 42, кв. 322</span>
+                    <span class="info-address">Адрес: г. Москва, д. 42, кв. 322</span>
                     <span class="info-phone">Телефон: +7 (000) 123-45-67</span>
                     <span class="info-email">Email: example@example.com</span>
                 </div>
             </div>
+            <div class="burger">
+                <img src="menu.png" alt="menu">
+            </div>
         </header>
         <nav>
             <ul>
-                <li><a href="#" class="active">Главная</a>
+                <li><a href="#">Главная</a>
                 <li><a href="#">Каталог</a>
-                <li><a href="#">Доставка</a>
+                <li><a href="#"  class="active">Доставка</a>
                 <li><a href="#">Оплата</a>
                 <li><a href="#">О нас</a>
             </ul>
@@ -45,6 +48,14 @@
             Подвал
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('header').on('click', '.burger', function(){
+                $('nav').toggle();
+            })
+        });
+    </script>
 </body>
 </html>
 

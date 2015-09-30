@@ -26,7 +26,7 @@ aside {
 
 #wrapper {
 	margin: 0 auto;
-	width: 800px;
+	max-width: 1024px;
 }
 
 header {
@@ -97,5 +97,53 @@ nav a.active {
 #filter {
 	width: 20%;
 }
+.burger {
+	align-self: center;
+	display: none;
+}
+.burger img {
+	width: 64px;
+	height: 64px;
+}
+@media screen and (max-width: 640px) {
+	.name {
+		display: none;
+	}
+}
 
-
+@media screen and (max-width: 480px) {
+	.info {
+		display: none;
+	}
+	.workarea {
+		display: flex;
+		flex-direction: column;
+		flex-wrap:wrap;
+	}
+	#content {
+		width: 100%;
+		order: 2;
+	}
+	#catalog {
+		width: 100%;
+		order: 3;
+	}
+	#filter {
+		width: 100%;
+		order: 1;
+	}
+	.fill {
+		height: 100px;
+	}
+	.burger {
+		align-self: center;
+		display: block;
+	}
+	nav {
+		display: none;
+	}
+	nav ul > li {
+		display: inline;
+		height: 30px;
+	}
+}
