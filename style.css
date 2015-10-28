@@ -147,3 +147,8 @@ nav a.active {
 		height: 30px;
 	}
 }
+
+form > *
+{
+	display: block;
+}
