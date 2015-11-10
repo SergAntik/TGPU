@@ -2,9 +2,9 @@
 
 <article>
     <form action="send.php" method="get">
-        <label>Имя: <input name="username" value="" type="text" /></label>
+        <label>РРјСЏ: <input name="username" value="" type="text" /></label>
         <label>E-mail: <input name="email" value="" type="text" /></label>
-        <label>Сообщение: <textarea name="text"></textarea></label>
+        <label>РЎРѕРѕР±С‰РµРёРµ: <textarea name="text"></textarea></label>
         <input type="submit" />
     </form>
 </article>
