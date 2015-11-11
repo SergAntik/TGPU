@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>HTML5 скелет, база</title>
+    <title>РЎР°Р№С‚ С‡РµРіРѕ-РЅРёР±СѓРґСЊ!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -10,11 +10,14 @@
 <div id="wrapper">
     <header>
         <div class="logo"><img src="logo.png"></div>
-        <div class="name">Сайт чего-нибудь!</div>
+        <div class="name">РЎР°Р№С‚ С‡РµРіРѕ-РЅРёР±СѓРґСЊ!</div>
         <div class="info">
             <div class="info-block">
-                <span class="info-address">Адрес: г. Москва, д. 42, кв. 322</span>
-                <span class="info-phone">Телефон: +7 (111) 123-45-67</span>
+
+
+
+                <span class="info-address">РђРґСЂРµСЃ: Рі. РњРѕСЃРєРІР°, Рґ. 42, РєРІ. 322</span>
+                <span class="info-phone"> РўРµР»РµС„РѕРЅ: +7 (111) 123-45-67</span>
                 <span class="info-email">Email: example@example.com</span>
             </div>
         </div>
@@ -24,15 +27,15 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">Главная</a>
-            <li><a href="#">Каталог</a>
-            <li><a href="#"  class="active">Доставка</a>
-            <li><a href="#">Оплата</a>
-            <li><a href="#">О нас</a>
+            <li><a href="#">Р“Р»Р°РІРЅР°СЏ</a>
+            <li><a href="#">РљР°С‚Р°Р»РѕРі</a>
+            <li><a href="#"  class="active">Р”РѕСЃС‚Р°РІРєР°</a>
+            <li><a href="#">РћРїР»Р°С‚Р°</a>
+            <li><a href="#">Рћ РЅР°СЃ</a>
         </ul>
     </nav>
     <div class="workarea">
         <aside id="catalog" class="fill">
-            Каталог
+            Р¤РёР»СЊС‚СЂ
         </aside>
         <section id="content" class="fill">
