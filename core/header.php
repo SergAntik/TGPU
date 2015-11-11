@@ -1,15 +1,16 @@
+<?include_once ('config.php');?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title>Сайт чего-нибудь!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 <div id="wrapper">
     <header>
-        <div class="logo"><img src="logo.png"></div>
+        <div class="logo"><img src="../logo.png"></div>
         <div class="name">Сайт чего-нибудь!</div>
         <div class="info">
             <div class="info-block">
@@ -22,7 +23,7 @@
             </div>
         </div>
         <div class="burger">
-            <img src="menu.png" alt="menu">
+            <img src="../menu.png" alt="menu">
         </div>
     </header>
     <nav>

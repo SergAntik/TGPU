@@ -1,4 +1,4 @@
-<?include_once ('header.php');?>
+<?include_once ('core/header.php');?>
 
 <article>
     <form action="send.php" method="get">
@@ -9,4 +9,4 @@
     </form>
 </article>
 
-<?include_once ('footer.php');
+<?include_once ('core/footer.php');
