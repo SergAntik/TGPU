@@ -1,4 +1,13 @@
-<?include_once ('config.php');?>
+<?include_once ($_SERVER['DOCUMENT_ROOT'].'/core/config.php');?>
+<?
+$menu = new Menu(array(
+    //new MenuItem('Главная', '/'),
+    new MenuItem('Каталог', '/catalog'),
+    new MenuItem('Доставка', '/delivery'),
+    new MenuItem('Оплата', '/payment'),
+    new MenuItem('О нас', '/about'),
+));
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,9 +23,6 @@
         <div class="name">Сайт чего-нибудь!</div>
         <div class="info">
             <div class="info-block">
-
-
-
                 <span class="info-address">Адрес: г. Москва, д. 42, кв. 322</span>
                 <span class="info-phone"> Телефон: +7 (111) 123-45-67</span>
                 <span class="info-email">Email: example@example.com</span>
@@ -28,11 +34,16 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">Главная</a>
-            <li><a href="#">Каталог</a>
+            <? foreach ($menu->get() as $item) :?>
+            <li><a href="<?=$item['PATH'].'/index.php'?>"
+                   class="<?= $item['ACTIVE'] ? 'active' : '' ?>"
+                    ><?=$item['NAME']?></a>
+            <? endforeach;?>
+
+            <!--li><a href="#">Каталог</a>
             <li><a href="#"  class="active">Доставка</a>
             <li><a href="#">Оплата</a>
-            <li><a href="#">О нас</a>
+            <li><a href="#">О нас</a-->
         </ul>
     </nav>
     <div class="workarea">
