@@ -1,13 +1,4 @@
 <?include_once ($_SERVER['DOCUMENT_ROOT'].'/core/config.php');?>
-<?
-$menu = new Menu(array(
-    //new MenuItem('Главная', '/'),
-    new MenuItem('Каталог', '/catalog'),
-    new MenuItem('Доставка', '/delivery'),
-    new MenuItem('Оплата', '/payment'),
-    new MenuItem('О нас', '/about'),
-));
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,16 +25,10 @@ $menu = new Menu(array(
     </header>
     <nav>
         <ul>
-            <? foreach ($menu->get() as $item) :?>
-            <li><a href="<?=$item['PATH'].'/index.php'?>"
-                   class="<?= $item['ACTIVE'] ? 'active' : '' ?>"
-                    ><?=$item['NAME']?></a>
-            <? endforeach;?>
-
-            <!--li><a href="#">Каталог</a>
+            <li><a href="#">Каталог</a>
             <li><a href="#"  class="active">Доставка</a>
             <li><a href="#">Оплата</a>
-            <li><a href="#">О нас</a-->
+            <li><a href="#">О нас</a>
         </ul>
     </nav>
     <div class="workarea">
