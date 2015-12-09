@@ -25,10 +25,10 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">Каталог</a>
-            <li><a href="#"  class="active">Доставка</a>
-            <li><a href="#">Оплата</a>
-            <li><a href="#">О нас</a>
+            <li><a href="/catalog/index.php">Каталог</a>
+            <li><a href="/delivery/index.php">Доставка</a>
+            <li><a href="/payment/index.php">Оплата</a>
+            <li><a href="/about/index.php">О нас</a>
         </ul>
     </nav>
     <div class="workarea">
