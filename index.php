@@ -1,7 +1,25 @@
-<?include_once ('core/header.php');?>
+<?php
+// Подключаем автолоадер
+require __DIR__.'/core/vendor/autoload.php';
 
-<article>
-    Главная
-</article>
+use PHPRouter\RouteCollection;
+use PHPRouter\Router;
+use PHPRouter\Route;
 
-<?include_once ('core/footer.php');
+
+// Показываем все ошибки
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Маршрутизатор
+$collection = new RouteCollection();
+
+$collection->attachRoute(new Route('/test/', array(
+    '_controller' => 'TGPU\Controller\Start::index',
+    'methods' => 'GET'
+)));
+
+$router = new Router($collection);
+$route = $router->matchCurrentRequest();
+

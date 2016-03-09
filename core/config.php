@@ -1,5 +1,5 @@
 <?
-try {
+/*try {
     $db = new PDO(
         'mysql:host=localhost;dbname=tgpu',
         'root',
@@ -8,4 +8,4 @@ try {
 } catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
-}
+}*/
