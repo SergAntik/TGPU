@@ -1,4 +1,4 @@
-<?include_once ('header.php');?>
+<?include_once ('core/header.php');?>
 <pre>
 <?
 array_filter($_POST, 'trim');
@@ -24,4 +24,4 @@ file_put_contents('send.txt', $line, FILE_APPEND | LOCK_EX);
 ?>
 </pre>
 
-<?include_once ('footer.php');
+<?include_once ('core/footer.php');

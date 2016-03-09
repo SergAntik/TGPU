@@ -1,16 +1,16 @@
-<?include_once ('config.php');?>
+<?include_once ($_SERVER['DOCUMENT_ROOT'].'/core/config.php');?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title>Сайт чего-нибудь!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 <div id="wrapper">
     <header>
-        <div class="logo"><img src="logo.png"></div>
+        <div class="logo"><img src="../logo.png"></div>
         <div class="name">Сайт чего-нибудь!</div>
         <div class="info">
             <div class="info-block">
@@ -20,16 +20,15 @@
             </div>
         </div>
         <div class="burger">
-            <img src="menu.png" alt="menu">
+            <img src="../menu.png" alt="menu">
         </div>
     </header>
     <nav>
         <ul>
-            <li><a href="#">Главная</a>
-            <li><a href="#">Каталог</a>
-            <li><a href="#"  class="active">Доставка</a>
-            <li><a href="#">Оплата</a>
-            <li><a href="#">О нас</a>
+            <li><a href="/catalog/index.php">Каталог</a>
+            <li><a href="/delivery/index.php">Доставка</a>
+            <li><a href="/payment/index.php">Оплата</a>
+            <li><a href="/about/index.php">О нас</a>
         </ul>
     </nav>
     <div class="workarea">
