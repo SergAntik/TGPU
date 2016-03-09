@@ -6,7 +6,14 @@ class Start extends Base
 {
     public function index()
     {
-        return $this->render('index', ['name' => 'Sergey']);
-
+        // тут что-нибудь считаем
+        return $this->render(
+            'test/test',
+            [
+                'basket' => [
+                    'price' => '12 000'
+                ]
+            ]
+        );
     }
 }
